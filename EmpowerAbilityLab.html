@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empower Ability Labs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Empower Ability Labs</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" aria-label="Home">Home</a></li>
+                <li><a href="#about" aria-label="About Us">About Us</a></li>
+                <li><a href="#services" aria-label="Services">Services</a></li>
+                <li><a href="#contact" aria-label="Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to Empower Ability Labs</h2>
+            <p>Empowering abilities through innovative solutions.</p>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Learn more about our mission and values.</p>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>Discover the services we offer to empower your abilities.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm" onsubmit="handleFormSubmit(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required aria-required="true">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required aria-required="true">
+                <label for="inviteCheckbox">Invite to Event:</label>
+                <input type="checkbox" id="inviteCheckbox" name="inviteCheckbox" onclick="toggleFormDetails()">
+                <div id="extraField" style="display:none;">
+                    <label for="eventDetails">Event Details:</label>
+                    <textarea id="eventDetails" name="eventDetails"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Empower Ability Labs 2023. All rights reserved.</p>
+    </footer>
+    <!-- JavaScript for interactive components -->
+    <script src="EmpowerAbilityLab.js"></script>
+</body>
+</html>
