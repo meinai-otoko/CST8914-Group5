@@ -79,9 +79,8 @@ input, select, textarea {
 }
 
 input:focus, select:focus, textarea:focus {
-    outline: none;
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: 2px solid black;
+    border-color: black;
 }
 
 button {
@@ -95,6 +94,17 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+.btn:focus {
+    outline: 3px solid black;
+    border-color: black;
+}
+
+.form-control:focus{
+    outline: 2px solid black;
+    border-color: black;
+    box-shadow: 0 0 5px rgba(52, 52, 52, 0.5);
 }
 
 /* Modal Styles */
