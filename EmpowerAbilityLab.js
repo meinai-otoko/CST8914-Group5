@@ -51,6 +51,11 @@ function toggleFormDetails() {
     }
 }
 
+// Handle switch toggle
+document.getElementById('emailUpdates').addEventListener('change', function(event) {
+    this.setAttribute('aria-checked', this.checked);
+});
+
 // 点击模态框内容外部时关闭模态框
 window.addEventListener('click', function(event) {
     const modals = document.getElementsByClassName('modal');
